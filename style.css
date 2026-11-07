@@ -371,6 +371,16 @@ a:focus-visible {
 
 @media (max-width: 760px) {
 
+    body {
+        padding: 12px 8px;
+    }
+
+    .header {
+        aspect-ratio: auto;
+        min-height: 200px;
+        padding: 20px;
+    }
+
     .isi {
         grid-template-columns: 1fr;
         padding: 20px;
@@ -387,11 +397,14 @@ a:focus-visible {
     }
 
     td:first-child {
-        width: 120px;
+        width: 110px;
     }
-  .back-to-top {
-    background: red !important;
-}
+
+    .back-to-top {
+        right: 15px;
+        bottom: 15px;
+        padding: 10px 18px;
+    }
 }
 /* ========================================
    13. TOMBOL KEMBALI KE ATAS
