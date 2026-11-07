@@ -1,0 +1,85 @@
+/* Mengatur seluruh elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Tampilan halaman */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Container utama */
+.container {
+    width: 90%;
+    max-width: 600px;
+    padding: 40px 30px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Judul */
+.container h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+/* Paragraf */
+.container p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* Menu latihan */
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Tombol menu */
+.menu a {
+    display: block;
+    padding: 15px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Efek ketika kursor diarahkan */
+.menu a:hover {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Tampilan layar HP */
+@media (max-width: 480px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    .container h1 {
+        font-size: 28px;
+    }
+
+    .menu a {
+        font-size: 14px;
+        padding: 12px;
+    }
+}

@@ -1,0 +1,72 @@
+body {
+    background-color: #eaf2f8;
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    color: black;
+}
+
+/* Judul Fakultas */
+font[size="7"] {
+    color: darkblue;
+    font-weight: bold;
+}
+
+/* Nama Universitas */
+font[size="5"] {
+    color: darkred;
+    font-weight: bold;
+}
+
+/* Alamat */
+font[size="3"] {
+    color: #444;
+}
+
+/* Garis horizontal */
+hr {
+    border: 2px solid darkblue;
+    width: 100%;
+}
+
+/* Bagian utama */
+main {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* Gambar */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+}
+
+/* Judul bagian */
+article div {
+    color: darkblue;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Paragraf */
+article {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Daftar */
+ul {
+    padding-left: 35px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Efek ketika kursor diarahkan ke daftar */
+li:hover {
+    color: darkred;
+}

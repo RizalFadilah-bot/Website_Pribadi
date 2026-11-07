@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width,initial-scale=1.0">
+    <title>Profil Keluarga</title>
+
+    <style>
+        body {
+            background-image: url("background.jpeg");
+            background-size: cover;
+            background-position: center;
+            font-family: Arial;
+            text-align: center;
+        }
+
+        .halaman {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 90%;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        button:hover{
+            background-color: darkblue;
+        }
+        table {
+            margin: auto;
+            background-color: white;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: blue;
+            color: white;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        /* Tampilan untuk HP */
+@media screen and (max-width: 600px) {
+
+    .halaman {
+        width: 95%;
+        padding: 15px;
+        margin: 10px auto;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        padding: 12px 16px;
+        font-size: 15px;
+        margin: 4px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 8px 5px;
+        overflow-wrap: anywhere;
+    }
+
+    body {
+        background-attachment: scroll;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+<!-- HALAMAN 1 -->
+<div id="halaman1" class="halaman">
+<center>
+    <img src="Foto.jpeg" width="250" alt="Foto Profil">
+</center>
+    <h1>PROFIL KELUARGA</h1>
+
+    <p>Selamat datang di halaman profil keluarga saya.</p>
+
+    <button onclick="bukaHalaman('halaman2')">
+        Berikutnya
+    </button>
+
+</div>
+
+
+<!-- HALAMAN 2 -->
+<div id="halaman2" class="halaman" style="display:none;">
+
+    <h1>DAFTAR KELUARGA</h1>
+
+    <p>Silakan pilih anggota keluarga:</p>
+
+    <button onclick="bukaProfil('ayah')">Ayah</button>
+    <button onclick="bukaProfil('ibu')">Ibu</button>
+    <button onclick="bukaProfil('saya')">Saya</button>
+    <button onclick="bukaProfil('adik')">Adik</button>
+
+    <br><br>
+
+    <button onclick="bukaHalaman('halaman1')">
+        Kembali
+    </button>
+
+</div>
+
+
+<!-- HALAMAN 3 -->
+<div id="halaman3" class="halaman" style="display:none;">
+
+    <h1 id="judulProfil">PROFIL KELUARGA</h1>
+
+    <table>
+        <tr>
+            <th>Keterangan</th>
+            <th>Data</th>
+        </tr>
+
+        <tr>
+            <td>Nama</td>
+            <td id="nama"></td>
+        </tr>
+
+        <tr>
+            <td>Tempat, Tanggal Lahir</td>
+            <td id="ttl"></td>
+        </tr>
+
+        <tr>
+            <td>Umur</td>
+            <td id="umur"></td>
+        </tr>
+
+        <tr>
+            <td>Pekerjaan</td>
+            <td id="pekerjaan"></td>
+        </tr>
+
+        <tr>
+            <td>Pendidikan Terakhir</td>
+            <td id="pendidikan"></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <button onclick="bukaHalaman('halaman2')">
+        Kembali ke Daftar Keluarga
+    </button>
+
+</div>
+
+
+<script>
+
+var keluarga = {
+    ayah: {
+        judul: "PROFIL AYAH",
+        nama: "Ayah",
+        ttl: "13 Oktober 1977",
+        umur: "49 tahun",
+        pekerjaan: "Wiraswasta",
+        pendidikan: "SD"
+    },
+
+    ibu: {
+        judul: "PROFIL IBU",
+        nama: "Ibu",
+        ttl: "07 Juni 1980",
+        umur: "46 tahun",
+        pekerjaan: "Ibu Rumah Tangga",
+        pendidikan: "SMA"
+    },
+
+    saya: {
+        judul: "PROFIL SAYA",
+        nama: "Rizal Fadilah",
+        ttl: "16 Desember 2003",
+        umur: "22 tahun",
+        pekerjaan: "Mahasiswa",
+        pendidikan: "SMA"
+    },
+
+    adik: {
+        judul: "PROFIL ADIK",
+        nama: "Adik Saya",
+        ttl: "04 Oktober 2010",
+        umur: "16 tahun",
+        pekerjaan: "Pelajar",
+        pendidikan: "SMA"
+    }
+};
+
+
+function bukaHalaman(id) {
+    document.getElementById("halaman1").style.display = "none";
+    document.getElementById("halaman2").style.display = "none";
+    document.getElementById("halaman3").style.display = "none";
+
+    document.getElementById(id).style.display = "block";
+}
+
+
+function bukaProfil(anggota) {
+    var data = keluarga[anggota];
+
+    document.getElementById("judulProfil").innerHTML = data.judul;
+    document.getElementById("nama").innerHTML = data.nama;
+    document.getElementById("ttl").innerHTML = data.ttl;
+    document.getElementById("umur").innerHTML = data.umur;
+    document.getElementById("pekerjaan").innerHTML = data.pekerjaan;
+    document.getElementById("pendidikan").innerHTML = data.pendidikan;
+
+    bukaHalaman("halaman3");
+}
+
+</script>
+
+</body>
+</html>

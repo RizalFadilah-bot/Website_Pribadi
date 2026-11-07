@@ -1,0 +1,23 @@
+body{
+    background-color: lightblue;
+    font-family: arial, sans-serif;
+    text-align: center;
+    margin: 30px;
+}
+font[size="7"] {
+    color: darkblue;
+    font-weight: bold;
+}
+font[size="5"] {
+    color: darkred;
+    font-weight: bold;
+}
+font[size="3"] {
+    color: black;
+    line-height: 1.8;
+}
+hr {
+    border: 2px solid blue;
+    width: 80px auto;
+    margin: 20px auto;
+}

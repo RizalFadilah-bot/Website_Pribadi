@@ -1,0 +1,95 @@
+/* Pengaturan halaman */
+body {
+    background: linear-gradient(to right, #dbeafe, #e0f2fe);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px;
+}
+
+/* Formulir */
+form {
+    width: 500px;
+    margin: auto;
+}
+
+/* Kotak formulir */
+fieldset {
+    background-color: white;
+    border: 2px solid #2563eb;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-spacing: 10px;
+}
+
+/* Tulisan */
+td {
+    color: #1e3a8a;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Input */
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Efek ketika input diklik */
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border: 2px solid #2563eb;
+    background-color: #f0f7ff;
+}
+
+/* Radio button */
+input[type="radio"] {
+    accent-color: #2563eb;
+}
+
+/* Tombol Simpan */
+input[type="submit"] {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Tombol Batal */
+input[type="reset"] {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Efek hover tombol */
+input[type="submit"]:hover {
+    background-color: #1e40af;
+}
+
+input[type="reset"]:hover {
+    background-color: #a71d2a;
+}

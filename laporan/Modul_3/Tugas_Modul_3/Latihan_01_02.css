@@ -1,0 +1,61 @@
+body {
+    background-color: #eaf2f8;
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    color: black;
+}
+
+/* Judul Fakultas */
+font[size="7"] {
+    color: darkblue;
+    font-weight: bold;
+}
+
+/* Nama Universitas */
+font[size="5"] {
+    color: darkred;
+    font-weight: bold;
+}
+
+/* Alamat */
+font[size="3"] {
+    color: #444444;
+}
+
+/* Garis */
+hr {
+    border: 2px solid darkblue;
+    width: 100%;
+}
+
+/* Bagian utama */
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Judul Visi Misi */
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+/* Visi dan Misi */
+dt {
+    color: darkred;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+dd {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Daftar Misi */
+ol li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}

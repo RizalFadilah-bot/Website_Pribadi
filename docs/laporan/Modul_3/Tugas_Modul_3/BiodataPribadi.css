@@ -1,0 +1,84 @@
+/* PENGATURAN HALAMAN */
+body {
+    background: linear-gradient(to right, #dbeafe, #f8fafc);
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    color: #333;
+}
+
+/* JUDUL */
+h1 {
+    color: #123c69;
+    font-size: 32px;
+    text-shadow: 2px 2px 3px #aaa;
+    letter-spacing: 2px;
+}
+
+/* SUBJUDUL */
+h2 {
+    color: #123c69;
+    background-color: #d1e5f5;
+    padding: 10px;
+    border-left: 5px solid #123c69;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+/* GARIS */
+hr {
+    border: none;
+    height: 3px;
+    background: linear-gradient(to right, #123c69, #2196f3, #d4a017);
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+/* TABEL */
+table {
+    border-collapse: collapse;
+    background-color: white;
+    width: 80%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border: 2px solid #123c69;
+}
+
+/* KOLOM TABEL */
+td {
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+/* WARNA BARIS */
+tr:nth-child(even) {
+    background-color: #eaf2f8;
+}
+
+/* EFEK HOVER TABEL */
+tr:hover {
+    background-color: #c5e1f9;
+    transition: 0.3s;
+}
+
+/* TABEL PENDIDIKAN */
+table:nth-of-type(2) {
+    width: 50%;
+}
+
+/* DAFTAR */
+ul {
+    background-color: white;
+    padding: 15px 40px;
+    width: 75%;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* ISI DAFTAR */
+li {
+    padding: 5px;
+}
+
+/* EFEK HOVER DAFTAR */
+li:hover {
+    color: #1565c0;
+}
