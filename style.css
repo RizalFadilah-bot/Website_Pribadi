@@ -272,6 +272,10 @@ td:first-child {
     overflow-x: auto;
 }
 
+.jadwal{
+    min-width: 520px;
+}
+
 .jadwal th {
     background: var(--ink);
     color: #fff;
